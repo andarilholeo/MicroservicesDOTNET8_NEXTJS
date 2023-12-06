@@ -1,30 +1,23 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace AuctionService.DTOs;
 
-public record CreateAuctionDTO
-(
+public class CreateAuctionDTO
+{
     [Required]
-    string Make,
-
+    public string Make { get; set; }
     [Required]
-    string Model,
-
+    public string Model { get; set; }
     [Required]
-    int Year,
-
+    public int Year { get; set; }
     [Required]
-    string Color,
-
+    public string Color { get; set; }
     [Required]
-    int Mileage,
-
+    public int Mileage { get; set; }
     [Required]
-    string ImageUrl,
-
+    public string ImageUrl { get; set; }
     [Required]
-    int ReservePrice,
-
+    public int ReservePrice { get; set; }
     [Required]
-    DateTime AuctionEnd
-);
+    public DateTime AuctionEnd { get; set; }
+}
